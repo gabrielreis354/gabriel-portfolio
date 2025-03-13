@@ -22,7 +22,9 @@ export const Contact = () => {
         alert("Mensagem enviada!");
         setFormData({ name: "", email: "", message: "" }); // reset form
       })
-      .catch(alert("Algo de errado aconteceu"));
+      .catch(() => {
+        alert("Algo de errado aconteceu");
+      });
   };
 
   return (
